@@ -14,6 +14,6 @@ File.open("hamlet.txt","r"){|file|
   file.readlines.each_with_index { |line, line_num|
      #binding.pry
      #puts open(url).readline
-     puts line if line_num % 42
+     puts line if line_num % 42 == 41
   }
 }
