@@ -11,7 +11,7 @@ File.open(local_page_name,"w") { |somefile| somefile.write(RestClient.get(url))}
 
 File.open("hamlet.txt","r"){|file|
   file.readlines.each {|line|
-    binding.pry
+    #binding.pry
     puts line if /\s\sHam.\s/.match(line)
   }
 }
